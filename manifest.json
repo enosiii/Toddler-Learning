@@ -3,20 +3,20 @@
     "name": "Toddler's Learning Adventure",
     "short_name": "Learning Adventure",
     "description": "An interactive educational app designed to teach toddlers about colors, shapes, animals, and numbers.",
-    "start_url": "/toddler-learning/index.html",
-    "scope": "/toddler-learning/",
+    "start_url": "/index.html",
+    "scope": "/",
     "display": "fullscreen",
     "orientation": "landscape",
     "background_color": "#f0f8ff",
     "theme_color": "#ffcc00",
     "icons": [
         {
-            "src": "/toddler-learning/assets/icons/icon192.png",
+            "src": "assets/icons/icon192.png",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "/toddler-learning/assets/icons/icon512.png",
+            "src": "assets/icons/icon512.png",
             "sizes": "512x512",
             "type": "image/png"
         }
