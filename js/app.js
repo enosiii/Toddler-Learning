@@ -3,34 +3,34 @@
 // Data for each activity
 const activities = {
     colors: [
-        { name: 'Red', image: 'assets/images/red.png', sound: 'assets/sounds/red.mp3' },
-        { name: 'Blue', image: 'assets/images/blue.png', sound: 'assets/sounds/blue.mp3' },
-        { name: 'Green', image: 'assets/images/green.png', sound: 'assets/sounds/green.mp3' },
-        { name: 'Yellow', image: 'assets/images/yellow.png', sound: 'assets/sounds/yellow.mp3' }
+        { name: 'Red', image: 'assets/images/red.png', sound: 'assets/sounds/Red.mp3' },
+        { name: 'Blue', image: 'assets/images/blue.png', sound: 'assets/sounds/Blue.mp3' },
+        { name: 'Green', image: 'assets/images/green.png', sound: 'assets/sounds/Green.mp3' },
+        { name: 'Yellow', image: 'assets/images/yellow.png', sound: 'assets/sounds/Yellow.mp3' }
     ],
     shapes: [
-        { name: 'Circle', image: 'assets/images/circle.png', sound: 'assets/sounds/circle.mp3' },
-        { name: 'Square', image: 'assets/images/square.png', sound: 'assets/sounds/square.mp3' },
-        { name: 'Triangle', image: 'assets/images/triangle.png', sound: 'assets/sounds/triangle.mp3' },
-        { name: 'Star', image: 'assets/images/star.png', sound: 'assets/sounds/star.mp3' }
+        { name: 'Circle', image: 'assets/images/circle.png', sound: 'assets/sounds/Circle.mp3' },
+        { name: 'Square', image: 'assets/images/square.png', sound: 'assets/sounds/Square.mp3' },
+        { name: 'Triangle', image: 'assets/images/triangle.png', sound: 'assets/sounds/Triangle.mp3' },
+        { name: 'Star', image: 'assets/images/star.png', sound: 'assets/sounds/Star.mp3' }
     ],
     animals: [
-        { name: 'Cat', image: 'assets/images/cat.png', sound: 'assets/sounds/cat.mp3' },
-        { name: 'Dog', image: 'assets/images/dog.png', sound: 'assets/sounds/dog.mp3' },
-        { name: 'Rooster', image: 'assets/images/rooster.png', sound: 'assets/sounds/rooster.mp3' },
-        { name: 'Cow', image: 'assets/images/cow.png', sound: 'assets/sounds/cow.mp3' }
+        { name: 'Cat', image: 'assets/images/cat.png', sound: 'assets/sounds/Cat.mp3' },
+        { name: 'Dog', image: 'assets/images/dog.png', sound: 'assets/sounds/Dog.mp3' },
+        { name: 'Rooster', image: 'assets/images/rooster.png', sound: 'assets/sounds/Rooster.mp3' },
+        { name: 'Cow', image: 'assets/images/cow.png', sound: 'assets/sounds/Cow.mp3' }
     ],
     numbers: [
-        { name: 'One', image: 'assets/images/1.png', sound: 'assets/sounds/one.mp3' },
-        { name: 'Two', image: 'assets/images/2.png', sound: 'assets/sounds/two.mp3' },
-        { name: 'Three', image: 'assets/images/3.png', sound: 'assets/sounds/three.mp3' },
-        { name: 'Four', image: 'assets/images/4.png', sound: 'assets/sounds/four.mp3' },
-        { name: 'Five', image: 'assets/images/5.png', sound: 'assets/sounds/five.mp3' },
-        { name: 'Six', image: 'assets/images/6.png', sound: 'assets/sounds/six.mp3' },
-        { name: 'Seven', image: 'assets/images/7.png', sound: 'assets/sounds/seven.mp3' },
-        { name: 'Eight', image: 'assets/images/8.png', sound: 'assets/sounds/eight.mp3' },
-        { name: 'Nine', image: 'assets/images/9.png', sound: 'assets/sounds/nine.mp3' },
-        { name: 'Ten', image: 'assets/images/10.png', sound: 'assets/sounds/ten.mp3' }
+        { name: 'One', image: 'assets/images/1.png', sound: 'assets/sounds/One.mp3' },
+        { name: 'Two', image: 'assets/images/2.png', sound: 'assets/sounds/Two.mp3' },
+        { name: 'Three', image: 'assets/images/3.png', sound: 'assets/sounds/Three.mp3' },
+        { name: 'Four', image: 'assets/images/4.png', sound: 'assets/sounds/Four.mp3' },
+        { name: 'Five', image: 'assets/images/5.png', sound: 'assets/sounds/Five.mp3' },
+        { name: 'Six', image: 'assets/images/6.png', sound: 'assets/sounds/Six.mp3' },
+        { name: 'Seven', image: 'assets/images/7.png', sound: 'assets/sounds/Seven.mp3' },
+        { name: 'Eight', image: 'assets/images/8.png', sound: 'assets/sounds/Eight.mp3' },
+        { name: 'Nine', image: 'assets/images/9.png', sound: 'assets/sounds/Nine.mp3' },
+        { name: 'Ten', image: 'assets/images/10.png', sound: 'assets/sounds/Ten.mp3' }
     ]
 };
 
