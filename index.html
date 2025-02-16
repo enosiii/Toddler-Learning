@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toddler's Learning Adventure</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="manifest" href="manifest.json">
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/service-worker.js', { scope: '/' })
+                    .then(function(registration) {
+                        console.log('Service Worker registered with scope:', registration.scope);
+                    })
+                    .catch(function(error) {
+                        console.error('Service Worker registration failed:', error);
+                    });
+            });
+        }
+    </script>
+</head>
+<body>
+    <div class="game-container">
+        <h1 id="game-title">Toddler's Learning Adventure</h1>
+        <div class="menu">
+            <button class="menu-btn" data-activity="colors" data-sound="assets/sounds/Colors.mp3">Colors</button>
+            <button class="menu-btn" data-activity="shapes" data-sound="assets/sounds/Shapes.mp3">Shapes</button>
+            <button class="menu-btn" data-activity="animals" data-sound="assets/sounds/Animals.mp3">Animals</button>
+            <button class="menu-btn" data-activity="numbers" data-sound="assets/sounds/Numbers.mp3">Numbers</button>
+        </div>
+        <div id="activity" class="activity">
+            <!-- Activity content will be dynamically inserted here -->
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+    <script src="js/hideH1.js"></script>
+    <script src="js/menuSounds.js"></script>
+</body>
+</html>
