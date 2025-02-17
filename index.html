@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="assets/icons/icon192.png">
+    <link rel="icon" type="image/png" href="/Toddler-Learning/assets/icons/icon192.png">
     <title>Toddler's Learning Adventure</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="/Toddler-Learning/css/styles.css">
+    <link rel="manifest" href="/Toddler-Learning/manifest.json">
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', function() {
-                navigator.serviceWorker.register('/js/service-worker.js', { scope: '/' })
+                navigator.serviceWorker.register('/Toddler-Learning/js/service-worker.js', { scope: '/Toddler-Learning/' })
                     .then(function(registration) {
                         console.log('Service Worker registered with scope:', registration.scope);
                     })
@@ -25,17 +25,17 @@
     <div class="game-container">
         <h1 id="game-title">Toddler's Learning Adventure</h1>
         <div class="menu">
-            <button class="menu-btn" data-activity="colors" data-sound="assets/sounds/Colors.mp3">Colors</button>
-            <button class="menu-btn" data-activity="shapes" data-sound="assets/sounds/Shapes.mp3">Shapes</button>
-            <button class="menu-btn" data-activity="animals" data-sound="assets/sounds/Animals.mp3">Animals</button>
-            <button class="menu-btn" data-activity="numbers" data-sound="assets/sounds/Numbers.mp3">Numbers</button>
+            <button class="menu-btn" data-activity="colors" data-sound="/Toddler-Learning/assets/sounds/Colors.mp3">Colors</button>
+            <button class="menu-btn" data-activity="shapes" data-sound="/Toddler-Learning/assets/sounds/Shapes.mp3">Shapes</button>
+            <button class="menu-btn" data-activity="animals" data-sound="/Toddler-Learning/assets/sounds/Animals.mp3">Animals</button>
+            <button class="menu-btn" data-activity="numbers" data-sound="/Toddler-Learning/assets/sounds/Numbers.mp3">Numbers</button>
         </div>
         <div id="activity" class="activity">
             <!-- Activity content will be dynamically inserted here -->
         </div>
     </div>
-    <script src="js/app.js"></script>
-    <script src="js/hideH1.js"></script>
-    <script src="js/menuSounds.js"></script>
+    <script src="/Toddler-Learning/js/app.js"></script>
+    <script src="/Toddler-Learning/js/hideH1.js"></script>
+    <script src="/Toddler-Learning/js/menuSounds.js"></script>
 </body>
 </html>
