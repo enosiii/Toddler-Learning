@@ -62,8 +62,10 @@ body {
 }
 
 .install {
-    margin-bottom: 20px;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    margin-top: 20px;
 }
 
 .install-btn {
@@ -75,6 +77,7 @@ body {
     border: none;
     border-radius: 10px;
     cursor: pointer;
+    text-align: center;
 }
 
 .install-btn:active {
