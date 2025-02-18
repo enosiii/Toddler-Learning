@@ -160,11 +160,11 @@ const activities = {
         { name: 'Triangle', image: '/Toddler-Learning/assets/images/shapes/triangle.png', sound: '/Toddler-Learning/assets/sounds/shapes/Triangle.mp3' },
         { name: 'Star', image: '/Toddler-Learning/assets/images/shapes/star.png', sound: '/Toddler-Learning/assets/sounds/shapes/Star.mp3' },
         { name: 'Rectangle', image: '/Toddler-Learning/assets/images/shapes/rectangle.png', sound: '/Toddler-Learning/assets/sounds/shapes/Rectangle.mp3' },
-        { name: 'Oval', image: '/Toddler-Learning/assets/images/shapes/oval.png', sound: '/Toddler-Learning/assets/sounds/shapes/Oval.mp3' },
+        { name: 'Rhombus', image: '/Toddler-Learning/assets/images/shapes/rhombus.png', sound: '/Toddler-Learning/assets/sounds/shapes/Rhombus.mp3' },
         { name: 'Hexagon', image: '/Toddler-Learning/assets/images/shapes/hexagon.png', sound: '/Toddler-Learning/assets/sounds/shapes/Hexagon.mp3' },
         { name: 'Pentagon', image: '/Toddler-Learning/assets/images/shapes/pentagon.png', sound: '/Toddler-Learning/assets/sounds/shapes/Pentagon.mp3' },
         { name: 'Heart', image: '/Toddler-Learning/assets/images/shapes/heart.png', sound: '/Toddler-Learning/assets/sounds/shapes/Heart.mp3' },
-        { name: 'Diamond', image: '/Toddler-Learning/assets/images/shapes/diamond.png', sound: '/Toddler-Learning/assets/sounds/shapes/Diamond.mp3' }
+        { name: 'Hexagram', image: '/Toddler-Learning/assets/images/shapes/hexagram.png', sound: '/Toddler-Learning/assets/sounds/shapes/Hexagram.mp3' }
     ],
     animals: [
         { name: 'Chicken', image: '/Toddler-Learning/assets/images/animals/rooster.png', sound: '/Toddler-Learning/assets/sounds/animals/RoosterNS.mp3' },
