@@ -11,6 +11,8 @@
 ## Live Demo
 [Click here to try it out!](https://enosiii.github.io/Toddler-Learning/)
 
+![Toddler Learning](assets/icons/icon192.png)
+
 ## Installation
 To run the project locally, follow these steps:
 
