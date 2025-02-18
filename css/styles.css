@@ -27,7 +27,7 @@ body {
     cursor: pointer;
 }
 
-.menu-btn:active {
+.menu-btn:hover {
     background-color: #ff9900;
 }
 
@@ -84,6 +84,6 @@ body {
     text-align: center;
 }
 
-.install-btn:active {
+.install-btn:hover {
     background-color: #ff9900;
 }
