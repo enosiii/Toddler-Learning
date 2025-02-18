@@ -15,10 +15,10 @@ const activities = {
         { name: 'Star', image: 'assets/images/star.png', sound: 'assets/sounds/Star.mp3' }
     ],
     animals: [
-        { name: 'Cat', image: 'assets/images/cat.png', sound: 'assets/sounds/Cat.mp3' },
-        { name: 'Dog', image: 'assets/images/dog.png', sound: 'assets/sounds/Dog.mp3' },
-        { name: 'Rooster', image: 'assets/images/rooster.png', sound: 'assets/sounds/Rooster.mp3' },
-        { name: 'Cow', image: 'assets/images/cow.png', sound: 'assets/sounds/Cow.mp3' }
+        { name: 'Cat', image: 'assets/images/cat.png', sound: 'assets/sounds/CatNS.mp3' },
+        { name: 'Dog', image: 'assets/images/dog.png', sound: 'assets/sounds/DogNS.mp3' },
+        { name: 'Chicken', image: 'assets/images/rooster.png', sound: 'assets/sounds/RoosterNS.mp3' },
+        { name: 'Cow', image: 'assets/images/cow.png', sound: 'assets/sounds/CowNS.mp3' }
     ],
     numbers: [
         { name: 'One', image: 'assets/images/1.png', sound: 'assets/sounds/One.mp3' },
