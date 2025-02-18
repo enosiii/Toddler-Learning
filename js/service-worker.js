@@ -4,9 +4,12 @@ const assetsToCache = [
     '/Toddler-Learning/index.html',
     '/Toddler-Learning/manifest.json',
     '/Toddler-Learning/css/styles.css',
+    
     '/Toddler-Learning/js/app.js',
     '/Toddler-Learning/js/menuSounds.js',
     '/Toddler-Learning/js/hideH1.js',
+    '/Toddler-Learning/js/parentalControl.js',
+    
     '/Toddler-Learning/assets/icons/icon192.png',
     '/Toddler-Learning/assets/icons/icon512.png',
     
