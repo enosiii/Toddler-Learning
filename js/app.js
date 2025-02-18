@@ -43,16 +43,16 @@ const activities = {
         ],
         
         animals: [
-        { name: 'Rooster, image: '/Toddler-Learning/assets/images/animals/rooster.png', sound: '/Toddler-Learning/assets/sounds/animals/Rooster.mp3' },
-        { name: 'Cat, image: '/Toddler-Learning/assets/images/animals/cat.png', sound: '/Toddler-Learning/assets/sounds/animals/Cat.mp3' },
-        { name: 'Cow, image: '/Toddler-Learning/assets/images/animals/cow.png', sound: '/Toddler-Learning/assets/sounds/animals/Cow.mp3' },
-        { name: 'Dog, image: '/Toddler-Learning/assets/images/animals/dog.png', sound: '/Toddler-Learning/assets/sounds/animals/Dog.mp3' },
-        { name: 'Duck, image: '/Toddler-Learning/assets/images/animals/duck.png', sound: '/Toddler-Learning/assets/sounds/animals/Duck.mp3' },
-        { name: 'Goat, image: '/Toddler-Learning/assets/images/animals/goat.png', sound: '/Toddler-Learning/assets/sounds/animals/Goat.mp3' },
-        { name: 'Elephant, image: '/Toddler-Learning/assets/images/animals/elephant.png', sound: '/Toddler-Learning/assets/sounds/animals/Elephant.mp3' },
-        { name: 'Lion, image: '/Toddler-Learning/assets/images/animals/lion.png', sound: '/Toddler-Learning/assets/sounds/animals/Lion.mp3' },
-        { name: 'Bird, image: '/Toddler-Learning/assets/images/animals/bird.png', sound: '/Toddler-Learning/assets/sounds/animals/Bird.mp3' },
-        { name: 'Monkey, image: '/Toddler-Learning/assets/images/animals/monkey.png', sound: '/Toddler-Learning/assets/sounds/animals/Monkey.mp3' }
+        { name: 'Rooster, image: '/Toddler-Learning/assets/images/animals/rooster.png', sound: '/Toddler-Learning/assets/sounds/animals/RoosterNS.mp3' },
+        { name: 'Cat, image: '/Toddler-Learning/assets/images/animals/cat.png', sound: '/Toddler-Learning/assets/sounds/animals/CatNS.mp3' },
+        { name: 'Cow, image: '/Toddler-Learning/assets/images/animals/cow.png', sound: '/Toddler-Learning/assets/sounds/animals/CowNS.mp3' },
+        { name: 'Dog, image: '/Toddler-Learning/assets/images/animals/dog.png', sound: '/Toddler-Learning/assets/sounds/animals/DogNS.mp3' },
+        { name: 'Duck, image: '/Toddler-Learning/assets/images/animals/duck.png', sound: '/Toddler-Learning/assets/sounds/animals/DuckNS.mp3' },
+        { name: 'Goat, image: '/Toddler-Learning/assets/images/animals/goat.png', sound: '/Toddler-Learning/assets/sounds/animals/GoatNS.mp3' },
+        { name: 'Elephant, image: '/Toddler-Learning/assets/images/animals/elephant.png', sound: '/Toddler-Learning/assets/sounds/animals/ElephantNS.mp3' },
+        { name: 'Lion, image: '/Toddler-Learning/assets/images/animals/lion.png', sound: '/Toddler-Learning/assets/sounds/animals/LionNS.mp3' },
+        { name: 'Bird, image: '/Toddler-Learning/assets/images/animals/bird.png', sound: '/Toddler-Learning/assets/sounds/animals/BirdNS.mp3' },
+        { name: 'Monkey, image: '/Toddler-Learning/assets/images/animals/monkey.png', sound: '/Toddler-Learning/assets/sounds/animals/MonkeyNS.mp3' }
         ],
         
         fruits: [
