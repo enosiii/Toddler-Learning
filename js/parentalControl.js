@@ -1,52 +1,47 @@
-// parentalControl.js
+document.addEventListener("DOMContentLoaded", function () {
+    let lastPressTime = 0;
+    const doublePressInterval = 500; // 500ms for double-tap detection
 
-// Disable Notification Banners
-function disableNotifications() {
-    if ('Notification' in window) {
-        // Request permission to show notifications (if not already granted)
-        Notification.requestPermission().then(permission => {
-            if (permission === 'granted') {
-                // If permission is granted, disable notifications by revoking it
-                Notification.requestPermission().then(permission => {
-                    if (permission === 'granted') {
-                        console.log('Notifications disabled for parental control.');
-                    }
-                });
-            }
-        });
-    }
-}
-
-// Double-Tap to Exit
-function enableDoubleTapToExit() {
-    let tapCount = 0;
-    let lastTapTime = 0;
-    const doubleTapDelay = 500; // Time in milliseconds between taps
-
-    // Listen for back button presses (or any navigation button)
-    window.addEventListener('popstate', () => {
+    // Prevent accidental navigation away (Home, Back, Recent Apps)
+    function preventAccidentalExit(event) {
         const currentTime = new Date().getTime();
-        const tapTimeDiff = currentTime - lastTapTime;
+        if (currentTime - lastPressTime < doublePressInterval) {
+            // If second press is within 500ms, allow exit
+            return;
+        }
+        lastPressTime = currentTime;
+        event.preventDefault(); // Block the action on first press
+        alert("Double-tap to exit"); // Alert user
+    }
 
-        if (tapTimeDiff < doubleTapDelay && tapCount === 1) {
-            // Double-tap detected, allow exit
-            window.history.back();
-            tapCount = 0;
-            lastTapTime = 0;
-        } else {
-            // Single tap detected, prevent exit
-            tapCount = 1;
-            lastTapTime = currentTime;
-            alert('Tap again to exit.'); // Optional: Show a message to the user
+    // Detect Android navigation buttons (Back, Home, Recents)
+    document.addEventListener("keydown", function (event) {
+        if (event.key === "Backspace" || event.key === "Escape") {
+            preventAccidentalExit(event);
         }
     });
-}
 
-// Initialize Parental Controls
-function initializeParentalControls() {
-    disableNotifications();
-    enableDoubleTapToExit();
-}
+    // Fullscreen mode check (prevents accidental exits)
+    function enableFullScreen() {
+        if (!document.fullscreenElement) {
+            document.documentElement.requestFullscreen().catch(err => {
+                console.warn("Fullscreen mode not supported:", err);
+            });
+        }
+    }
+    
+    document.body.addEventListener("click", enableFullScreen); // Enable on click
 
-// Run Parental Controls when the DOM is fully loaded
-document.addEventListener('DOMContentLoaded', initializeParentalControls);
+    // Attempt to block notification banners (May not be 100% effective)
+    function blockNotifications() {
+        if (Notification.permission === "granted") {
+            Notification.requestPermission().then(permission => {
+                if (permission !== "granted") {
+                    console.log("Notifications blocked");
+                }
+            });
+        }
+    }
+
+    blockNotifications(); // Call on load
+});
