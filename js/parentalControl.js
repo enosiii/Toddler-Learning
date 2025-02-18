@@ -1,59 +1,66 @@
-// parentalControl.js
-
-// Prevent accidental navigation
 document.addEventListener('DOMContentLoaded', () => {
-    // Disable back button
+    // Prevent Back Button Navigation
     window.history.pushState(null, null, window.location.href);
     window.onpopstate = () => {
         window.history.pushState(null, null, window.location.href);
     };
 
-    // Disable context menu (right-click)
-    document.addEventListener('contextmenu', (e) => {
-        e.preventDefault();
+    // Prevent context menu (right-click)
+    document.addEventListener('contextmenu', (e) => e.preventDefault());
+
+    // Prevent swipe gestures (touch devices)
+    document.addEventListener('touchmove', (e) => e.preventDefault(), { passive: false });
+
+    // Enforce Fullscreen Mode
+    function requestFullScreen() {
+        if (!document.fullscreenElement) {
+            document.documentElement.requestFullscreen().catch((err) => {
+                console.warn("Fullscreen request failed:", err);
+            });
+        }
+    }
+    requestFullScreen();
+    document.addEventListener('fullscreenchange', () => {
+        if (!document.fullscreenElement) requestFullScreen();
     });
 
-    // Disable swipe gestures (for touch devices)
-    document.addEventListener('touchmove', (e) => {
-        e.preventDefault();
-    }, { passive: false });
-
-    // Double-click requirement for navigation buttons (Android)
+    // Double-click requirement for exiting the app
     let lastClickTime = 0;
-    const doubleClickDelay = 500; // Time in milliseconds for double-click
+    const doubleClickDelay = 500; // 500ms delay for double-click
 
-    // Intercept back button
+    function handleExit() {
+        const currentTime = new Date().getTime();
+        if (currentTime - lastClickTime < doubleClickDelay) {
+            console.log("Exiting app");
+            window.removeEventListener('beforeunload', () => {});
+        } else {
+            console.log("Press again to exit");
+            lastClickTime = currentTime;
+        }
+    }
+
+    // Detect Home, Recent, and Back Button Press
+    document.addEventListener('visibilitychange', () => {
+        if (document.hidden) {
+            handleExit();
+        }
+    });
+
+    // Prevent accidental app closure
+    window.addEventListener('blur', () => {
+        setTimeout(() => {
+            if (document.hidden) {
+                console.log("Trying to close the app.");
+                window.focus();
+            }
+        }, 100);
+    });
+
+    // Intercept Back Button Press
     window.addEventListener('beforeunload', (e) => {
         e.preventDefault();
         e.returnValue = ''; // Required for Chrome
     });
 
-    // Double-click logic for navigation buttons
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Backspace' || e.key === 'Escape') {
-            const currentTime = new Date().getTime();
-            if (currentTime - lastClickTime < doubleClickDelay) {
-                // Allow navigation if double-clicked
-                window.removeEventListener('beforeunload', () => {});
-            } else {
-                e.preventDefault();
-            }
-            lastClickTime = currentTime;
-        }
-    });
+    console.log("Parental Control Enabled");
 });
-
-// Prevent accidental app closure
-window.addEventListener('blur', () => {
-    window.focus(); // Refocus the window if it loses focus
-});
-
-// Prevent exiting fullscreen mode
-document.addEventListener('fullscreenchange', () => {
-    if (!document.fullscreenElement) {
-        document.documentElement.requestFullscreen();
-    }
-});
-
-// Ensure fullscreen mode on load
-document.documentElement.requestFullscreen();
