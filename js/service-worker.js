@@ -1,4 +1,4 @@
-const cacheName = 'toddler-learning-adventure-v2';
+const cacheName = 'toddler-learning-adventure-v3';
 const assetsToCache = [
     '/Toddler-Learning/',
     '/Toddler-Learning/index.html',
@@ -9,18 +9,22 @@ const assetsToCache = [
     '/Toddler-Learning/js/hideH1.js',
     '/Toddler-Learning/assets/icons/icon192.png',
     '/Toddler-Learning/assets/icons/icon512.png',
+    
     '/Toddler-Learning/assets/images/red.png',
     '/Toddler-Learning/assets/images/blue.png',
     '/Toddler-Learning/assets/images/green.png',
     '/Toddler-Learning/assets/images/yellow.png',
+    
     '/Toddler-Learning/assets/images/circle.png',
     '/Toddler-Learning/assets/images/square.png',
     '/Toddler-Learning/assets/images/triangle.png',
     '/Toddler-Learning/assets/images/star.png',
+    
     '/Toddler-Learning/assets/images/rooster.png',
     '/Toddler-Learning/assets/images/cat.png',
     '/Toddler-Learning/assets/images/cow.png',
     '/Toddler-Learning/assets/images/dog.png',
+    
     '/Toddler-Learning/assets/images/1.png',
     '/Toddler-Learning/assets/images/2.png',
     '/Toddler-Learning/assets/images/3.png',
@@ -31,18 +35,22 @@ const assetsToCache = [
     '/Toddler-Learning/assets/images/8.png',
     '/Toddler-Learning/assets/images/9.png',
     '/Toddler-Learning/assets/images/10.png',
+    
     '/Toddler-Learning/assets/sounds/Red.mp3',
     '/Toddler-Learning/assets/sounds/Blue.mp3',
     '/Toddler-Learning/assets/sounds/Green.mp3',
     '/Toddler-Learning/assets/sounds/Yellow.mp3',
+    
     '/Toddler-Learning/assets/sounds/Circle.mp3',
     '/Toddler-Learning/assets/sounds/Square.mp3',
     '/Toddler-Learning/assets/sounds/Triangle.mp3',
     '/Toddler-Learning/assets/sounds/Star.mp3',
-    '/Toddler-Learning/assets/sounds/Rooster.mp3',
-    '/Toddler-Learning/assets/sounds/Cow.mp3',
-    '/Toddler-Learning/assets/sounds/Cat.mp3',
-    '/Toddler-Learning/assets/sounds/Dog.mp3',
+    
+    '/Toddler-Learning/assets/sounds/RoosterNS.mp3',
+    '/Toddler-Learning/assets/sounds/CowNS.mp3',
+    '/Toddler-Learning/assets/sounds/CatNS.mp3',
+    '/Toddler-Learning/assets/sounds/DogNS.mp3',
+    
     '/Toddler-Learning/assets/sounds/One.mp3',
     '/Toddler-Learning/assets/sounds/Two.mp3',
     '/Toddler-Learning/assets/sounds/Three.mp3',
@@ -53,6 +61,7 @@ const assetsToCache = [
     '/Toddler-Learning/assets/sounds/Eight.mp3',
     '/Toddler-Learning/assets/sounds/Nine.mp3',
     '/Toddler-Learning/assets/sounds/Ten.mp3',
+    
     '/Toddler-Learning/assets/sounds/Shapes.mp3',
     '/Toddler-Learning/assets/sounds/Colors.mp3',
     '/Toddler-Learning/assets/sounds/Animals.mp3',
