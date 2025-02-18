@@ -25,10 +25,10 @@ body {
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    transition: all 0.8s ease-in-out;
+    transition: all 1.2s ease-in-out;
 }
 
-.menu-btn:hover {
+.menu-btn:active {
     background-color: #ff9900;
 }
 
