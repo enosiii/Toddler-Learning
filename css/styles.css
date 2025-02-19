@@ -90,7 +90,6 @@ body {
 
 /* Continuous marquee effect */
 .marquee {
-    display: flex;
     animation: marquee 5s linear infinite;
 }
 
