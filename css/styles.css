@@ -68,12 +68,12 @@ body {
 
 .text-container {
     width: 100%;
-    max-width: 140px; /* Prevents stretching beyond button width */
+    max-width: 140px;
     overflow: hidden;
     white-space: nowrap;
     position: relative;
-    background-color: #ff9900; /* Background color for text */
-    color: white; /* Ensures good contrast */
+    background-color: #ff9900;
+    color: white;
     padding: 3px 5px;
     border-radius: 5px;
     text-align: center;
@@ -84,20 +84,24 @@ body {
     white-space: nowrap;
     position: relative;
     will-change: transform;
+    padding-right: 20px; /* Adds spacing between repeated text */
 }
 
+/* Continuous marquee effect */
 .marquee {
+    display: flex;
     animation: marquee 5s linear infinite;
 }
 
+/* Keyframes for continuous scrolling */
 @keyframes marquee {
     from {
         transform: translateX(0);
     }
     to {
-        transform: translateX(-70%);
+        transform: translateX(-50%);
     }
-    }
+}
 
 .item-btn:hover {
     background-color: #f0f0f0;
