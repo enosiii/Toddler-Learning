@@ -96,14 +96,11 @@ body {
 
 /* Keyframes for continuous scrolling */
 @keyframes marquee {
-    0% {
+    from {
         transform: translateX(0);
     }
-    50% {
+    to {
         transform: translateX(-100%);
-    }
-    100% {
-        transform: translateX(0%);
     }
 }
 
