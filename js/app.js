@@ -193,8 +193,8 @@ const activities = {
 
     msRachel: [
        { name: 'The Wheels on The Bus', image: '/Toddler-Learning/assets/images/msRachel/TWOTB.png', sound: '/Toddler-Learning/assets/sounds/msRachel/TWOTB.mp3' },
-       { name: 'If You're Happy and You Know It', image: '/Toddler-Learning/assets/images/msRachel/IYHAYKI.png', sound: '/Toddler-Learning/assets/sounds/msRachel/IYHAYKI.mp3' },
-       { name: 'We're Waving', image: '/Toddler-Learning/assets/images/msRachel/WW.png', sound: '/Toddler-Learning/assets/sounds/msRachel/WW.mp3' },
+       { name: 'If You\'re Happy and You Know It', image: '/Toddler-Learning/assets/images/msRachel/IYHAYKI.png', sound: '/Toddler-Learning/assets/sounds/msRachel/IYHAYKI.mp3' },
+       { name: 'We\'re Waving', image: '/Toddler-Learning/assets/images/msRachel/WW.png', sound: '/Toddler-Learning/assets/sounds/msRachel/WW.mp3' },
        { name: 'ABCs with Keisha', image: '/Toddler-Learning/assets/images/msRachel/ABC.png', sound: '/Toddler-Learning/assets/sounds/msRachel/ABC.mp3' },
        { name: 'Itsy Bitsy Spider', image: '/Toddler-Learning/assets/images/msRachel/IBS.png', sound: '/Toddler-Learning/assets/sounds/msRachel/IBS.mp3' },
        { name: 'The More We Get Together', image: '/Toddler-Learning/assets/images/msRachel/TMWGT.png', sound: '/Toddler-Learning/assets/sounds/msRachel/TMWGT.mp3' },
