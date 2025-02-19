@@ -78,6 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+/*
 // Function to start an activity
 function startActivity(activityName) {
     const activity = document.getElementById('activity');
@@ -88,6 +89,35 @@ function startActivity(activityName) {
         button.className = 'item-btn';
         button.innerHTML = `<img src="${item.image}" alt="${item.name}"><br>${item.name}`;
         button.addEventListener('pointerdown', () => playSound(item.sound));
+        activity.appendChild(button);
+    });
+}
+*/
+function startActivity(activityName) {
+    const activity = document.getElementById('activity');
+    activity.innerHTML = ''; // Clear previous content
+
+    activities[activityName].forEach(item => {
+        const button = document.createElement('button');
+        button.className = 'item-btn';
+
+        // Create a wrapper for text
+        const textContainer = document.createElement('div');
+        textContainer.className = 'text-container';
+
+        const marqueeText = document.createElement('span');
+        marqueeText.className = 'marquee';
+        marqueeText.textContent = item.name;
+
+        textContainer.appendChild(marqueeText);
+
+        // Set button content
+        button.innerHTML = `<img src="${item.image}" alt="${item.name}"><br>`;
+        button.appendChild(textContainer);
+
+        // Add event listener for sound
+        button.addEventListener('pointerdown', () => playSound(item.sound));
+
         activity.appendChild(button);
     });
 }
