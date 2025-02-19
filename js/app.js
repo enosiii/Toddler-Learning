@@ -192,16 +192,16 @@ const activities = {
     ],
 
     msRachel: [
-       { name: 'The Wheels on The Bus', image: '/Toddler-Learning/assets/images/bodyParts/TWOTB.png', sound: '/Toddler-Learning/assets/sounds/bodyParts/TWOTB.mp3' },
-       { name: 'If You're Happy and You Know It', image: '/Toddler-Learning/assets/images/bodyParts/IYHAYKI.png', sound: '/Toddler-Learning/assets/sounds/bodyParts/IYHAYKI.mp3' },
-       { name: 'We're Waving', image: '/Toddler-Learning/assets/images/bodyParts/WW.png', sound: '/Toddler-Learning/assets/sounds/bodyParts/WW.mp3' },
-       { name: 'ABCs with Keisha', image: '/Toddler-Learning/assets/images/bodyParts/ABC.png', sound: '/Toddler-Learning/assets/sounds/bodyParts/ABC.mp3' },
-       { name: 'Itsy Bitsy Spider', image: '/Toddler-Learning/assets/images/bodyParts/IBS.png', sound: '/Toddler-Learning/assets/sounds/bodyParts/IBS.mp3' },
-       { name: 'The More We Get Together', image: '/Toddler-Learning/assets/images/bodyParts/TMWGT.png', sound: '/Toddler-Learning/assets/sounds/bodyParts/TMWGT.mp3' },
-       { name: 'Row, Row, Row Your Boat', image: '/Toddler-Learning/assets/images/bodyParts/RRRYB.png', sound: '/Toddler-Learning/assets/sounds/bodyParts/RRRYB.mp3' },
-       { name: 'Baby Put Your Pants On', image: '/Toddler-Learning/assets/images/bodyParts/BPYPO.png', sound: '/Toddler-Learning/assets/sounds/bodyParts/BPYPO.mp3' },
-       { name: 'Counting', image: '/Toddler-Learning/assets/images/bodyParts/1to20.png', sound: '/Toddler-Learning/assets/sounds/bodyParts/1to20.mp3' },
-       { name: 'Firetruck', image: '/Toddler-Learning/assets/images/bodyParts/FT .png', sound: '/Toddler-Learning/assets/sounds/bodyParts/FT .mp3' }
+       { name: 'The Wheels on The Bus', image: '/Toddler-Learning/assets/images/msRachel/TWOTB.png', sound: '/Toddler-Learning/assets/sounds/msRachel/TWOTB.mp3' },
+       { name: 'If You're Happy and You Know It', image: '/Toddler-Learning/assets/images/msRachel/IYHAYKI.png', sound: '/Toddler-Learning/assets/sounds/msRachel/IYHAYKI.mp3' },
+       { name: 'We're Waving', image: '/Toddler-Learning/assets/images/msRachel/WW.png', sound: '/Toddler-Learning/assets/sounds/msRachel/WW.mp3' },
+       { name: 'ABCs with Keisha', image: '/Toddler-Learning/assets/images/msRachel/ABC.png', sound: '/Toddler-Learning/assets/sounds/msRachel/ABC.mp3' },
+       { name: 'Itsy Bitsy Spider', image: '/Toddler-Learning/assets/images/msRachel/IBS.png', sound: '/Toddler-Learning/assets/sounds/msRachel/IBS.mp3' },
+       { name: 'The More We Get Together', image: '/Toddler-Learning/assets/images/msRachel/TMWGT.png', sound: '/Toddler-Learning/assets/sounds/msRachel/TMWGT.mp3' },
+       { name: 'Row, Row, Row Your Boat', image: '/Toddler-Learning/assets/images/msRachel/RRRYB.png', sound: '/Toddler-Learning/assets/sounds/msRachel/RRRYB.mp3' },
+       { name: 'Baby Put Your Pants On', image: '/Toddler-Learning/assets/images/msRachel/BPYPO.png', sound: '/Toddler-Learning/assets/sounds/msRachel/BPYPO.mp3' },
+       { name: 'Counting', image: '/Toddler-Learning/assets/images/msRachel/1to20.png', sound: '/Toddler-Learning/assets/sounds/msRachel/1to20.mp3' },
+       { name: 'Firetruck', image: '/Toddler-Learning/assets/images/msRachel/FT .png', sound: '/Toddler-Learning/assets/sounds/msRachel/FT .mp3' }
        ]
 };
 
