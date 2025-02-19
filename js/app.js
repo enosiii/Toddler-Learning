@@ -165,7 +165,7 @@ function startActivity(activityName) {
 }
 */
 
-/*
+
 //ver4
 function startActivity(activityName) {
     const activity = document.getElementById('activity');
@@ -202,8 +202,8 @@ function startActivity(activityName) {
         });
     });
 }
-*/
 
+/*
 //ver5
 function startActivity(activityName) {
     const activity = document.getElementById('activity');
@@ -240,6 +240,7 @@ function startActivity(activityName) {
         });
     });
 }
+*/
 
 
 // Function to play sound
