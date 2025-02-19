@@ -189,8 +189,20 @@ const activities = {
         { name: 'Eight', image: '/Toddler-Learning/assets/images/numbers/8.png', sound: '/Toddler-Learning/assets/sounds/numbers/Eight.mp3' },
         { name: 'Nine', image: '/Toddler-Learning/assets/images/numbers/9.png', sound: '/Toddler-Learning/assets/sounds/numbers/Nine.mp3' },
         { name: 'Ten', image: '/Toddler-Learning/assets/images/numbers/10.png', sound: '/Toddler-Learning/assets/sounds/numbers/Ten.mp3' }
-    ]
+    ],
 
+    msRachel: [
+       { name: 'The Wheels on The Bus', image: '/Toddler-Learning/assets/images/bodyParts/TWOTB.png', sound: '/Toddler-Learning/assets/sounds/bodyParts/TWOTB.mp3' },
+       { name: 'If You're Happy and You Know It', image: '/Toddler-Learning/assets/images/bodyParts/IYHAYKI.png', sound: '/Toddler-Learning/assets/sounds/bodyParts/IYHAYKI.mp3' },
+       { name: 'We're Waving', image: '/Toddler-Learning/assets/images/bodyParts/WW.png', sound: '/Toddler-Learning/assets/sounds/bodyParts/WW.mp3' },
+       { name: 'ABCs with Keisha', image: '/Toddler-Learning/assets/images/bodyParts/ABC.png', sound: '/Toddler-Learning/assets/sounds/bodyParts/ABC.mp3' },
+       { name: 'Itsy Bitsy Spider', image: '/Toddler-Learning/assets/images/bodyParts/IBS.png', sound: '/Toddler-Learning/assets/sounds/bodyParts/IBS.mp3' },
+       { name: 'The More We Get Together', image: '/Toddler-Learning/assets/images/bodyParts/TMWGT.png', sound: '/Toddler-Learning/assets/sounds/bodyParts/TMWGT.mp3' },
+       { name: 'Row, Row, Row Your Boat', image: '/Toddler-Learning/assets/images/bodyParts/RRRYB.png', sound: '/Toddler-Learning/assets/sounds/bodyParts/RRRYB.mp3' },
+       { name: 'Baby Put Your Pants On', image: '/Toddler-Learning/assets/images/bodyParts/BPYPO.png', sound: '/Toddler-Learning/assets/sounds/bodyParts/BPYPO.mp3' },
+       { name: 'Counting', image: '/Toddler-Learning/assets/images/bodyParts/1to20.png', sound: '/Toddler-Learning/assets/sounds/bodyParts/1to20.mp3' },
+       { name: 'Firetruck', image: '/Toddler-Learning/assets/images/bodyParts/FT .png', sound: '/Toddler-Learning/assets/sounds/bodyParts/FT .mp3' }
+       ]
 };
 
 // Variable to keep track of the currently playing audio
