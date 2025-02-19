@@ -67,8 +67,8 @@ body {
 }
 
 .text-container {
-    width: 100%;
-    max-width: 130px;
+    width: 85%;
+    max-width: 140px;
     overflow: hidden;
     white-space: nowrap;
     position: relative;
