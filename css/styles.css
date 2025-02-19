@@ -68,19 +68,23 @@ body {
 
 .text-container {
     width: 100%;
+    max-width: 140px; /* Prevents stretching beyond button width */
     overflow: hidden;
     white-space: nowrap;
     position: relative;
-    background-color: #ff9900; /* Background color for text area */
+    background-color: #ff9900; /* Background color for text */
     color: white; /* Ensures good contrast */
-    padding: 3px 5px; /* Adds spacing around text */
-    border-radius: 5px; /* Rounded corners */
+    padding: 3px 5px;
+    border-radius: 5px;
     text-align: center;
 }
 
-.marquee {
+.text {
     display: inline-block;
     white-space: nowrap;
+}
+
+.marquee {
     animation: marquee 5s linear infinite;
 }
 
