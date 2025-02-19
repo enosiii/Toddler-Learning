@@ -165,7 +165,7 @@ function startActivity(activityName) {
 }
 */
 
-
+/*
 //ver4
 function startActivity(activityName) {
     const activity = document.getElementById('activity');
@@ -198,6 +198,44 @@ function startActivity(activityName) {
             if (textSpan.scrollWidth > textContainer.clientWidth) {
                 textSpan.style.paddingLeft = textContainer.clientWidth + "px"; // Start outside the container
                 textSpan.classList.add('marquee');
+            }
+        });
+    });
+}
+*/
+
+//ver5
+function startActivity(activityName) {
+    const activity = document.getElementById('activity');
+    activity.innerHTML = ''; // Clear previous content
+
+    activities[activityName].forEach(item => {
+        const button = document.createElement('button');
+        button.className = 'item-btn';
+
+        const img = document.createElement('img');
+        img.src = item.image;
+        img.alt = item.name;
+
+        const textContainer = document.createElement('div');
+        textContainer.className = 'text-container';
+        
+        const textSpan = document.createElement('span');
+        textSpan.className = 'text';
+        textSpan.innerText = item.name + " \u00A0 \u00A0 "; // Add space between loops
+
+        textContainer.appendChild(textSpan);
+        textContainer.appendChild(textSpan.cloneNode(true)); // Duplicate text for seamless loop
+
+        button.appendChild(img);
+        button.appendChild(textContainer);
+
+        button.addEventListener('pointerdown', () => playSound(item.sound));
+        activity.appendChild(button);
+
+        requestAnimationFrame(() => {
+            if (textSpan.scrollWidth > textContainer.clientWidth) {
+                textContainer.classList.add('marquee');
             }
         });
     });
