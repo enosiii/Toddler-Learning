@@ -127,6 +127,7 @@ function startActivity(activityName) {
 }
 */
 
+/*
 //ver3
 function startActivity(activityName) {
     const activity = document.getElementById('activity');
@@ -157,6 +158,45 @@ function startActivity(activityName) {
         // Check if text overflows and apply marquee effect
         requestAnimationFrame(() => {
             if (textSpan.scrollWidth > textContainer.clientWidth) {
+                textSpan.classList.add('marquee');
+            }
+        });
+    });
+}
+*/
+
+
+//ver4
+function startActivity(activityName) {
+    const activity = document.getElementById('activity');
+    activity.innerHTML = ''; // Clear previous content
+
+    activities[activityName].forEach(item => {
+        const button = document.createElement('button');
+        button.className = 'item-btn';
+
+        const img = document.createElement('img');
+        img.src = item.image;
+        img.alt = item.name;
+
+        const textContainer = document.createElement('div');
+        textContainer.className = 'text-container';
+        
+        const textSpan = document.createElement('span');
+        textSpan.className = 'text';
+        textSpan.innerText = item.name;
+        
+        textContainer.appendChild(textSpan);
+        button.appendChild(img);
+        button.appendChild(textContainer);
+
+        button.addEventListener('pointerdown', () => playSound(item.sound));
+        activity.appendChild(button);
+
+        // Ensure animation only applies if text is overflowing
+        requestAnimationFrame(() => {
+            if (textSpan.scrollWidth > textContainer.clientWidth) {
+                textSpan.style.paddingLeft = textContainer.clientWidth + "px"; // Start outside the container
                 textSpan.classList.add('marquee');
             }
         });
