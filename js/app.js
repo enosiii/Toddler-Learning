@@ -60,7 +60,7 @@ const activities = {
        { name: 'Row, Row, Row Your Boat', image: '/Toddler-Learning/assets/images/msRachel/RRRYB.png', sound: '/Toddler-Learning/assets/sounds/msRachel/RRRYB.mp3' },
        { name: 'Baby Put Your Pants On', image: '/Toddler-Learning/assets/images/msRachel/BPYPO.png', sound: '/Toddler-Learning/assets/sounds/msRachel/BPYPO.mp3' },
        { name: 'Counting', image: '/Toddler-Learning/assets/images/msRachel/1to20.png', sound: '/Toddler-Learning/assets/sounds/msRachel/1to20.mp3' },
-       { name: 'Firetruck', image: '/Toddler-Learning/assets/images/msRachel/FT .png', sound: '/Toddler-Learning/assets/sounds/msRachel/FT .mp3' }
+       { name: 'Firetruck', image: '/Toddler-Learning/assets/images/msRachel/FT.png', sound: '/Toddler-Learning/assets/sounds/msRachel/FT.mp3' }
        ]
 };
 
