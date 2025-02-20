@@ -1,4 +1,4 @@
-const cacheName = 'toddler-learning-adventure-v3';
+const cacheName = 'toddler-learning-adventure-v4';
 const assetsToCache = [
 '/Toddler-Learning/',
 '/Toddler-Learning/index.html',
