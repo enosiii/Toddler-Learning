@@ -11,7 +11,7 @@
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', function() {
-                navigator.serviceWorker.register('/Toddler-Learning/js/service-worker.js', { scope: '/Toddler-Learning/' })
+                navigator.serviceWorker.register('/Toddler-Learning/SW.js', { scope: '/Toddler-Learning/' })
                     .then(function(registration) {
                         console.log('Service Worker registered with scope:', registration.scope);
                     })
