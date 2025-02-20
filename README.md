@@ -1,5 +1,7 @@
 # Toddler Learning
 
+[![Donate](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://www.paypal.me/enosrigortan)
+
 **Toddler Learning** is an interactive learning web app designed for toddlers to learn alphabets, numbers, and basic words through engaging animations, sounds, and quizzes.
 
 ## Features
